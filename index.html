@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Color Picker JS</title>
+</head>
+
+<style>
+
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #btn-mas{
+            display: none;
+        }
+        .container{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .redes a, .icon-mas2{
+            display: block;
+            text-decoration: none;
+            background: #cc2b2b;
+            color: #fff;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.4);
+            transition: all 500ms ease;
+        }
+        .redes a:hover{
+            background: #fff;
+            color: #cc2b2b;
+        }
+        .redes a{
+            margin-bottom: 0px;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #btn-mas:checked~ .redes a{
+            margin-bottom: 10px;
+            opacity: 1;
+            visibility: visible;
+        }
+        .icon-mas2{
+            cursor: pointer;
+            background: #f44141;
+            font-size: 23px;
+        }
+        #btn-mas:checked ~ .btn-mas .icon-mas2{
+            transform: rotate(137deg);
+            font-size: 25px;
+        }
+        
+    
+                html
+                {
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+    
+                body
+                {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+    
+                textarea
+                {
+                    padding: 1px;
+                    resize: none;
+                    width: calc( 100% - 20px );
+                    height: 70%;
+                    margin: 0;
+                    border: 0;
+                }
+    
+                textarea:focus
+                {
+                    outline: none;
+                }
+    
+                iframe
+                {
+                    margin: 0;
+                    border: 0;
+                    height: 0%;
+                }
+    
+                .controls
+                {
+                    border-top   : 2px solid #7a0000;
+                    
+                    white-space: nowrap;
+                }
+    
+                .controls a, .controls label
+                {
+                    
+                    text-decoration: none;
+                    color: #ffffff;
+                    user-select: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+    
+                .controls a:hover, .controls label:hover
+                {
+                    
+                    background: #70281f;
+                    border-radius: 10px;
+                }
+    
+    
+    
+                .styled {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 1px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0px 0px 0px rgb(255, 255, 255);
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        background-image: linear-gradient(to top left,
+                                          rgba(0, 0, 0, .2),
+                                          rgba(0, 0, 0, .2) 30%,
+                                          rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+    
+    .styled:hover {
+        background-color: rgb(83, 83, 83);
+    }
+    
+    .styled:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                    inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+    
+    
+    
+    
+                    
+                    
+                    </style>
+
+<body bgcolor="#333333">
+<font class="favorite styled"> 
+    <p>Plugin Colors HTML selector de color simple </p>
+    <p style="margin-bottom: 10px;">Selecciona y copia el código HEXADECIMAL HTML </p>
+    </font>
+<br>
+    <span class="color-picker">
+        <label for="colorPicker">
+            <input type="color" value="#1DB8CE" id="colorPicker">
+        </label>
+    </span>
+
+   
+    <br>
+    <div class=controls>
+		
+        <button  class="favorite styled"> 
+          <a class="text-info text-decoration-none" href="https://t.me/YoRobotin">@YoRobotin</a>
+        </button>
+        <button  class="favorite styled">
+          <a class="text-info text-decoration-none" href="https://t.me/robotines">Grupo De Telegram</a>  
+        </button>
+      </div>   
+    </div> 
+    </div>  
+    </footer>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
